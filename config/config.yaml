@@ -1,0 +1,22 @@
+data:
+  raw_path: data/raw/Churn_Modelling.csv
+  processed_path: data/processed/
+
+model:
+  input_dim: null  # Set dynamically
+  output_dim: 2
+  num_hidden_layers: 3
+  neurons_per_layer: 64
+  dropout_rate: 0.2
+
+training:
+  epochs: 50
+  batch_size: 32
+  learning_rate: 0.001
+  optimizer: Adam
+  weight_decay: 1e-5
+  alpha: 0.2  # MixUp hyperparameter
+  patience: 5
+
+evaluation:
+  metric: f1_score
