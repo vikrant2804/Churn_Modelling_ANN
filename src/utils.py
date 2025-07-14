@@ -1,5 +1,6 @@
 import torch
 
+
 def mixup_data(x, y, alpha=0.2):
     if alpha > 0:
         lam = torch.distributions.beta.Beta(alpha, alpha).sample().item()

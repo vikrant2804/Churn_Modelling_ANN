@@ -7,6 +7,7 @@ from model import MyNN
 from utils import mixup_data
 from sklearn.metrics import f1_score
 
+
 # Load configuration
 with open('config/config.yaml', 'r') as file:
     config = yaml.safe_load(file)

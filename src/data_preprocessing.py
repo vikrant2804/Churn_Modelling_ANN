@@ -6,6 +6,7 @@ from imblearn.over_sampling import SMOTE
 import torch
 from torch.utils.data import TensorDataset
 
+
 # Load configuration
 with open('config/config.yaml', 'r') as file:
     config = yaml.safe_load(file)

@@ -1,5 +1,6 @@
 import torch.nn as nn
 
+
 class MyNN(nn.Module):
     def __init__(self, input_dim, output_dim, num_hidden_layers, neurons_per_layer, dropout_rate):
         super().__init__()

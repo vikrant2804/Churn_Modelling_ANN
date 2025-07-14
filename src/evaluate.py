@@ -3,6 +3,7 @@ from torch.utils.data import DataLoader
 from sklearn.metrics import f1_score
 import yaml
 
+
 with open('config/config.yaml', 'r') as file:
     config = yaml.safe_load(file)
 
